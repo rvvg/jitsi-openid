@@ -97,7 +97,7 @@ pub(crate) struct JitsiState {
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
   let subscriber = FmtSubscriber::builder()
-    .with_max_level(Level::INFO)
+    .with_max_level(Level::DEBUG)
     .compact()
     .finish();
 
